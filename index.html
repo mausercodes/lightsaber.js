@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- WEB FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Cinzel:400,700' rel='stylesheet' type='text/css'>
+	<!-- FAVICON -->
+	<link rel="icon" href="images/rebel.jpeg">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/lightsaber.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/modal.js"></script>
+	<title>Lightsaber.js</title>
+</head>
+<body>
+	<div class="wrapper">
+		<i class="fa fa-cog"></i>
+		<main class="mainContainer target">
+			<h1>Lightsaber.js</h1>
+			<p>Unleash your inner Jedi and turn your cursor into the ultimate weapon.</p>
+			<p>Choose your Lightsaber and follow your path.</p>
+			<p>The FORCE is strong with your website.</p>
+			<a href="#" class="button">POWER ON</a>
+			<div class="rebel">
+				<i class="fa fa-rebel"></i>
+			</div>
+
+			<div class="overlay">
+				<div class="modal">
+					<h2>DOCUMENTATION</h2>
+					<p>To use Lightsaber.js download the kit which includes:</p>
+					<ul>
+						<li>- Lightsaber Images</li>
+						<li>- Lightsaber Sound Effects</li>
+						<li>- The jQuery Plugin</li>
+					</ul>
+					<p>The Lightsaber can be activated by the click of a button or Konami-code (&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A). Default is set to activate on click.</p>
+					<div class="code">
+						<p>$(function() {</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;$(".button").lightsaber();</p>
+						<p>});</p>
+						<p>To activate on the click of a button call the lightsaber() function on the desired button.</p>
+					</div><!-- End code -->
+					<div class="code">
+						<p>$(function() {</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;$(".body").lightsaber({</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activate: "konami"</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;});</p>
+						<p>});</p>
+						<p>To activate on Konami-code set the activate property to "konami". The Lightsaber will only activate when you enter &uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A on your keyboard.</p>
+					</div><!-- End code -->
+					<p>You can choose what colour you want your Lightsaber to be. The colours available are Red, Green, Blue and Purple. Default is set to Green.</p>
+					<div class="code">
+						<p>$(function() {</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;$(".button").lightsaber({</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: "blue"</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;});</p>
+						<p>});</p>
+						<p>To change colours, set the color property to your desired colour. The color value must be entered in lower-case</p>
+					</div><!-- End code -->
+					<p>You can choose not to play Lightsaber sound effects when the Lightsaber is active. Default is set to true.</p>
+					<div class="code">
+						<p>$(function() {</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;$(".button").lightsaber({</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sound: false</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;});</p>
+						<p>});</p>
+						<p>Set the sound property to false to prevent Lightsaber sound effects from being played.</p>
+					</div><!-- End code -->
+					<p>You can choose if you want Destruction mode active or not. When active, any element with a class of "target" will be destroyed when clicked on with a Lightsaber. Default is set to false.</p>
+					<div class="code">
+						<p>$(function() {</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;$(".button").lightsaber({</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destruction: true</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;});</p>
+						<p>});</p>
+						<p>Set the destruction property to true to activate destruction mode.</p>
+					</div><!-- End code -->
+					<p>Remember to add the lightsaber.js script in the head of your document.</p>
+					<p>You are now ready to start your journey as a Jedi Master young Padawan.</p>
+					<a href="" class="close">&times;</a>
+				</div><!-- End modal -->
+			</div><!-- End overlay -->
+		</main><!-- End  mainContainer -->
+	</div><!-- End wrapper -->
+</body>
+</html>
