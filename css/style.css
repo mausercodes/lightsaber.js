@@ -57,15 +57,34 @@ ul{
 	border-color: #02bc5b;
 }
 
-.fa-cog{
+.info{
+	height: 40px;
+}
+
+.fa-cog,
+.fa-github,
+.fa-twitter{
+	margin-right: 20px;
 	color: #ccc;
 	padding-top: 20px;
 	font-size: 40px;
-	height: 40px;
+	transition: all 0.5s;
 }
 
 .fa-cog:hover{
 	cursor: pointer;
+}
+
+.fa-cog:hover{
+	color: #02bc5b;
+}
+
+.fa-github:hover{
+	color:#4183c4;
+}
+
+.fa-twitter:hover{
+	color:#55acee;
 }
 
 .overlay {
