@@ -43,7 +43,8 @@ ul{
 	letter-spacing: 2px;
 }
 
-.button{
+.button,
+.refresh{
 	border: 1px solid #ccc;
 	padding: 10px 30px;
 	border-radius: 4px;
@@ -55,6 +56,11 @@ ul{
 .button:hover{
 	color: #02bc5b;
 	border-color: #02bc5b;
+}
+
+.refresh:hover{
+	color: red;
+	border-color: red;
 }
 
 .info{
