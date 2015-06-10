@@ -152,3 +152,40 @@ ul{
 	font-size: 20px;
 	padding-top: 50px;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+	h1{
+		font-size: 68px;
+	}
+}
+
+@media (max-width: 540px) {
+	h1{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 350px) {
+	h1{
+		font-size: 28px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	a.close{
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 260px) {
+	h1{
+		font-size: 20px;
+	}
+
+	.info .fa{
+		font-size: 24px;
+	}
+}
